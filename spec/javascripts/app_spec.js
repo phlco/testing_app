@@ -18,12 +18,12 @@ describe("a bus", function(){
     expect(bus.size()).toEqual(2);
   });
 
-  it("returns true if it contains a specific passenger", function(){
-    var bus = new Bus();
-    bus.add("Mick");
-    expect(bus.contains("Mick")).toEqual(true);
-    expect(bus.contains("Keith")).not.toEqual(true);
-  });
+  // it("returns true if it contains a specific passenger", function(){
+  //   var bus = new Bus();
+  //   bus.add("Mick");
+  //   expect(bus.contains("Mick")).toEqual(true);
+  //   expect(bus.contains("Keith")).not.toEqual(true);
+  // });
 
   it("can't add the same passenger twice", function(){
     var bus = new Bus();

@@ -1,6 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/philco/Desktop/wdi/instructor_week09/travis/testing_app/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/philco/Desktop/wdi/instructor_week09/travis/testing_app/app/helpers/application_helper.rb": [
         1,
         null
@@ -14,6 +19,6 @@
         null
       ]
     },
-    "timestamp": 1384896834
+    "timestamp": 1384898018
   }
 }
