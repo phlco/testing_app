@@ -29,7 +29,7 @@ describe("a bus", function(){
     var bus = new Bus();
     bus.add("Mick");
     expect(bus.size()).toEqual(1);
-    bus.add("Mick");
+    expect(function() {bus.add("Mick");}).toThrow();
     expect(bus.size()).not.toEqual(2);
   });
 
