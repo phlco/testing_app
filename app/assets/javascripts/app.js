@@ -9,6 +9,8 @@ Bus.prototype.isEmpty = function() {
 Bus.prototype.add = function(passenger) {
   if ( !this.contains(passenger) ){
     this.passengers.push(passenger);
+  } else {
+    throw "Passenger already on bus"
   }
 }
 
@@ -18,4 +20,12 @@ Bus.prototype.size = function() {
 
 Bus.prototype.contains = function(passenger) {
   return this.passengers.indexOf(passenger) >= 0
+}
+
+function Passenger(name) {
+  this.name = name;
+}
+
+Passenger.sayHello = function() {
+  return "Hello! I'm " + this.name;
 }
