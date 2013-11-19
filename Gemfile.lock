@@ -64,7 +64,6 @@ GEM
       thor (>= 0.18.1)
     guard-rails (0.4.7)
       guard (>= 0.2.2)
-    headless (1.0.1)
     hike (1.2.3)
     i18n (0.6.5)
     jasmine (1.3.2)
@@ -73,17 +72,6 @@ GEM
       rspec (>= 1.3.1)
       selenium-webdriver (>= 0.1.3)
     jasmine-core (1.3.1)
-    jasmine-coverage (0.2.8)
-      coffee-script-source
-      headless
-      jasmine-headless-webkit-firstbanco (= 0.9.0.rc.3)
-    jasmine-headless-webkit-firstbanco (0.9.0.rc.3)
-      coffee-script
-      jasmine-core
-      multi_json (>= 1.2.0)
-      rainbow
-      sprockets
-      sprockets-vendor_gems
     journey (1.0.4)
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
@@ -133,7 +121,6 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    rainbow (1.1.4)
     rake (10.1.0)
     rb-fsevent (0.9.3)
     rb-inotify (0.9.2)
@@ -180,8 +167,6 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-vendor_gems (0.1.3)
-      sprockets
     term-ansicolor (1.2.2)
       tins (~> 0.8)
     thor (0.18.1)
@@ -205,9 +190,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   coveralls
   guard-rails
-  headless
   jasmine
-  jasmine-coverage
   jquery-rails
   launchy
   pg
