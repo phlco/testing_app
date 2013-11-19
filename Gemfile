@@ -12,6 +12,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'jasmine'
   gem "selenium-webdriver"
+  gem "service_manager"
 end
 
 group :development do

@@ -1,3 +1,8 @@
+require 'rubygems'
+require 'bundler/setup'
+require 'selenium-webdriver'
+require 'service_manager'
+
 task :travis do
   ["rspec spec", "rake jasmine:ci"].each do |cmd|
     puts "Starting to run #{cmd}..."
