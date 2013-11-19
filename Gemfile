@@ -13,6 +13,7 @@ group :development, :test do
   gem 'jasmine'
   gem "launchy"
   gem "selenium-webdriver"
+  gem 'coveralls', require: false
 end
 
 group :development do
