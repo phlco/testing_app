@@ -7,7 +7,7 @@ before_script:
   - "export JASMINE_SPEC_FORMAT=documentation"
 script:
   - "bundle exec rake db:create"
-  - "bundle exec rake db:test:prepare"
+  - "bundle exec rake db:migrate RAILS_ENV=test"
   - "bundle exec rake travis"
 env:
   - PG_USERNAME='postgres'
