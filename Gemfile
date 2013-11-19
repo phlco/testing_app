@@ -11,8 +11,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'jasmine'
+  gem "launchy"
   gem "selenium-webdriver"
-  gem "service_manager"
 end
 
 group :development do
