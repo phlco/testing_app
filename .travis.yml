@@ -9,4 +9,4 @@ before_script:
 script:
   - "bundle exec rake travis"
 env:
-  - PG_USERNAME='postgres' TRAVIS=true
+  - PG_USERNAME='postgres'

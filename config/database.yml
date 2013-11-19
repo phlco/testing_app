@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: <%= File.basename(Rails.root) %>_development
+  database: <%= Rails.application.class.parent_name %>_development
   pool: 5
   host: localhost
   username:  <%= ENV['PG_USERNAME'] %>
@@ -10,7 +10,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV['TRAVIS'] ? "travis" : File.basename(Rails.root) %>_test
+  database: <%= Rails.application.class.parent_name %>_test
   pool: 5
   host: localhost
   username: <%= ENV['PG_USERNAME'] %>
