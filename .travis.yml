@@ -6,8 +6,6 @@ before_script:
   - "export DISPLAY=:99.0"
   - "export JASMINE_SPEC_FORMAT=documentation"
 script:
-  - "bundle exec rake db:create"
-  - "bundle exec rake db:migrate RAILS_ENV=test"
   - "bundle exec rake travis"
 env:
   - PG_USERNAME='postgres'
