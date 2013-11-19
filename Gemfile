@@ -10,10 +10,13 @@ gem 'pg'
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
-  gem 'guard-rails'
   gem 'jasmine'
+  gem "selenium-webdriver"
 end
 
+group :development do
+  gem 'guard-rails'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
