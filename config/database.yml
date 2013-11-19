@@ -10,7 +10,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV['TEST_DB']%>_test
+  database: testing_app_test
   pool: 5
   host: localhost
   username: <%= ENV['PG_USERNAME'] %>
