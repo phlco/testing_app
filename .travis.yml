@@ -1,6 +1,8 @@
 language: ruby
 rvm:
   - 1.9.3
+before_script:
+  - psql -c 'create database <%= File.basename(Rails.root) %>_test;' -U postgres
 script:
   - "bundle exec rspec spec"
   - "bundle exec rake jasmine:ci"
